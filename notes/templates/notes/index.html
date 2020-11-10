@@ -49,4 +49,11 @@
     </section>
 </section>
 
+    {% for note in object_list %}
+        <div class="note-entry">
+            <h2><a href="{% url 'post_detail' notes.pk%}">{{ note.title }}</a></h2>
+            <p>{{ note.body }}</p>
+        </div>
+    {% endfor %}
+
 {% endblock content %}

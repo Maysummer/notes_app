@@ -1,0 +1,9 @@
+{% extends 'notes/base.html' %}
+
+{% block content %}
+    <div class="note-entry">
+        <h2>{{ object.title }}</h2>
+        <p>{{ object.text }}</p>
+    </div>
+
+{% endblock content %}
