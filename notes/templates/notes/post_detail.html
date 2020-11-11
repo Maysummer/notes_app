@@ -6,4 +6,6 @@
         <p>{{ object.text }}</p>
     </div>
 
+    <p><a href="{% url 'note_edit' note.pk %}">+ Edit Note</a></p>
+    <p><a href="{% url 'note_delete' note.pk %}">+ Delete Note</a></p>
 {% endblock content %}
