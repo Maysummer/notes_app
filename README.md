@@ -1,2 +1,2 @@
 # notes_app
-Create notes and make changes to it as you wish
+Create notes, edit notes and delete notes.
