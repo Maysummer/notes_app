@@ -3,11 +3,19 @@
 <html>
     <head>
         <title>Notes</title>
+        <style>
+            header a {
+                text-decoration: none;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <div>
             <header>
-                <h1><a href="{% url 'index' %}">Home</a> | <a href="{% url 'about' %}">About</a></h1>
+                <div class="nav-right">
+                <h1><a href="{% url 'note_new' %}">About</a></h1>
+                </div>
                 <div class="nav-right">
                     <a href="{% url 'note_new' %}">+ New note</a>
                 </div>
