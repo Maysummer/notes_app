@@ -5,14 +5,26 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 
-.landing-main {
-    background: url(note.jpg) no-repeat center center fixed;
+body {
+    background: url(laptop.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 .landing-section-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+}
+
+.landing-feature {
     padding: 2rem;
     background: rgba(0,0,0,0.5);
     width: 100vw;
@@ -35,13 +47,12 @@
     top: 0;
     left: 0;
     position: absolute;
-
     background: rgba(0,0,0,0.5);
 }
 
 .header-link {
     margin: 1rem;
-    border-bottom: 3px solid #c55e00;
+    border-bottom: 3px solid #c559008e;
     font-size: 1.2rem;
     color: #222;
     text-decoration: none;
@@ -53,3 +64,4 @@
     font-size: 1.2rem;
     color: #ccc;
 }
+
