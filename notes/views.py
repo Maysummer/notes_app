@@ -14,7 +14,7 @@ class AboutPageView(TemplateView):
 
 class NoteDetailView(DetailView):
     model = Note
-    template_name = 'notes/post_detail.html'
+    template_name = 'notes/note_detail.html'
 
 class NoteCreateView(CreateView):
     model = Note
