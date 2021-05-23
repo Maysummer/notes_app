@@ -3,15 +3,14 @@
 {% block content %}
 
 {% load static %}
-
 <title>MJ: My Jottings</title>
 <meta name="viewport" content="width=device-width, initial-scaled=1">
 <link rel="stylesheet" type="text/css" href="{% static 'notes/style.css' %}">
 
 <header class="header">
     <div class="header-text">Sign in via:</div>
-    <a href="https://gmail.com" class="header-link">Gmail</a>
-    <a href="https://facebook.com" class="header-link">Facebook</a>
+    <a href="#" class="header-link">Gmail</a>
+    <a href="#" class="header-link">Facebook</a>
 </header>
 
 <section class="landing-section landing-main">
@@ -32,15 +31,15 @@
 </section>
 
 <section class="landing-section landing-features">
-    <section class="landing-feature">
+    <section class="landing-feature feature-notes-services">
         <h2>Quick <span class="brand-text">No</span>tes</h2>
         <ul>
             <li>Create new notes</li>
         </ul>
     </section>
 
-    <section class="landing-feature">
-        <h2>My <span class="brand-text">N</span>otes</h2>
+    <section class="landing-feature feature-notifications">
+        <h2>My <span class="brand-tex">N</span>otes</h2>
         <ul>
             <li>Edit a note</li>
             <li>Read a note</li>
@@ -52,7 +51,7 @@
 
     {% for note in object_list %}
         <div class="note-entry">
-            <h2><a href="{% url 'post_detail' notes.pk%}">{{ note.title }}</a></h2>
+            <h2><a href="{% url 'note_detail' notes.pk%}">{{ note.title }}</a></h2>
             <p>{{ note.body }}</p>
         </div>
     {% endfor %}

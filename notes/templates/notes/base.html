@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 {% load static %}
 <html>
     <head>
@@ -11,13 +10,13 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="body">
             <header>
                 <div class="nav-right">
-                <h1><a href="{% url 'about' %}">About</a></h1>
+                <h1><a href="{% url 'index' %}">Home</a> | <a href="{% url 'about' %}">About</a></h1>
                 </div>
                 <div class="nav-right">
-                    <a href="{% url 'note_new' %}">+ New note</a>
+                <a href="{% url 'note_new' %}">+ New note</a>
                 </div>
             </header>
 
